@@ -15,8 +15,10 @@ function countdown() {
   if (verificationCD > verificationNY) {
     alert("Date entered has passed. Please enter a valid date: ");
     document.location.reload(true);
+  } else if (Number.isNaN(verificationNY) == true) {
+    alert("You entered not a number. Please enter a valid date: ");
+    document.location.reload(true);
   }
-
   const totalSeconds = (newYearsDate - currentDate) / 1000;
 
   const countingDays = totalSeconds / (3600 * 24);

@@ -3,11 +3,19 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-const newYears = "27 April 2021";
+const newYears = prompt(
+  "Enter the date for the countdown(Ex.: 11 April 2022): "
+);
 
 function countdown() {
   const newYearsDate = new Date(newYears);
   const currentDate = new Date();
+  const verificationNY = newYearsDate.getTime();
+  const verificationCD = currentDate.getTime();
+  if (verificationCD > verificationNY) {
+    alert("Date entered has passed. Please enter a valid date: ");
+    document.location.reload(true);
+  }
 
   const totalSeconds = (newYearsDate - currentDate) / 1000;
 

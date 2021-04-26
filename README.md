@@ -25,7 +25,7 @@ Clone the project and access the folder
 
 ```bash
 $ git clone https://github.com/italotorreslima/CountDownTimer && cd CountDownTimer
-
+```
 
 ## 💻 Project
 
@@ -41,5 +41,6 @@ You can view the project layout through the links below:
 
 
 ---
+
 <p align="center">Projected by Ítalo Torres with 🖤</p>
 <p align="center">Readme inspired by Guilherme Capitão</p>
